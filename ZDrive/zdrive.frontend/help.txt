@@ -1,0 +1,9 @@
+
+
+const HomePage = () => (
+    <div style={{ width: '60%', margin: 'auto' }}>
+     <h1>Hi</h1>
+    </div>
+);
+
+export default HomePage;

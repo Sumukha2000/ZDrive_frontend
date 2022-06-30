@@ -1,0 +1,29 @@
+.signinpage{
+    position: relative;
+width: 30rem;
+margin: auto;
+padding-top: 100px;
+
+
+}
+.welcometext{
+    text-align: center;
+}
+
+.signinform{
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+  
+}
+.signinbutton{
+    margin-left: 80%;
+    margin-top: 1%;;
+ 
+    
+
+    
+    width: 10rem;
+    
+
+}
