@@ -12,7 +12,7 @@ const Nav_bar = () => {
       <h1 className="zdrive">ZDrive</h1>
       {isLoggedIn ? (
         <button
-          className="signinbutton"
+          className="logoutbutton"
           href="/signin"
           
           onClick={() => {

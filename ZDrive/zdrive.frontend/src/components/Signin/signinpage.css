@@ -6,8 +6,21 @@ padding-top: 100px;
 
 
 }
+
+.usernameinput{
+
+    width: auto;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.passwordinput{
+    width:auto;
+    margin-bottom: 10px;
+}
 .welcometext{
     text-align: center;
+    margin-top: 50px;
 }
 
 .signinform{
@@ -17,9 +30,7 @@ padding-top: 100px;
   
 }
 .signinbutton{
-    margin-left: 80%;
-    margin-top: 1%;;
- 
+    margin:auto;
     
 
     

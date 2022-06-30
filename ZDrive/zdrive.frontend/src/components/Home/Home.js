@@ -56,7 +56,7 @@ export default function Home() {
         )}
         <div className="box">
         <h2 className="header">
-            React drop files input
+            You can drop files here too!
         </h2>
         <DropFileInput
             onFileChange={(files) => onFileChange(files)}

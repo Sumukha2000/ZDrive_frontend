@@ -1,37 +1,44 @@
 .signuppage{
+    position: absolute;
+    display: flex;
 
-width: 30rem;
+
 margin: auto;
-padding-top: 1300px;
+padding-top: 100px;
 
 
 }
-.createtext{
 
+.usernameinput , .passwordinput , .confirmpasswordinput , .emailinput{
+
+
+
+    margin-top: 10px;
+    padding-left: 20px;
+
+}
+
+
+.createtext{
+    position: relative;
     text-align: center;
-    padding-top:100px;
+    margin-top: 120px;
 }
 
 .signupform{
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin: 80px;
  
   
+}
+.confirmpasswordinput{
+    margin-bottom: 40px;
 }
 .signupbutton{
-    display: block;
-    margin-top: 30px;
- 
-    
-margin: auto;
-display: block;
-width: 10rem;
+
+   margin: auto;
+   width: 150px;
     
 
-}
-input{
-
-  
-    width: 10%;
 }
