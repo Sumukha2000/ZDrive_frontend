@@ -2,7 +2,8 @@ import React, { useState } from "react"
 import ReactDOM from "react-dom"
 import { faFileUpload } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
+import { CircularProgressbar , buildStyles } from 'react-circular-progressbar';
+import ChangingProgressProvider from "../components/ChangingProgressProvider";
 import { storage, database } from "../firebase"
 import { ROOT_FOLDER } from "../hooks/useFolder"
 import { v4 as uuidV4 } from "uuid"
@@ -87,8 +88,8 @@ export default function AddFileButton({ currentFolder }) {
 
   return (
     <>
-      <label className="btn btn-outline-success btn-sm m-0 mr-2">
-        <FontAwesomeIcon icon={faFileUpload} />
+      <label className="btn btn-outline-success btn-mm m-0 mr-2">
+        Upload File<FontAwesomeIcon icon={faFileUpload} />
         <input
           type="file"
           onChange={handleUpload}
@@ -123,16 +124,27 @@ export default function AddFileButton({ currentFolder }) {
                   {file.name}
                 </Toast.Header>
                 <Toast.Body>
-                  <ProgressBar
+                <ChangingProgressProvider values={[0, 50, 100]}>
+        {percentage => (
+          <CircularProgressbar
+            value={percentage}
+            text={`${percentage}%`}
+            styles={buildStyles({
+              pathTransitionDuration: 0.15
+            })}
+          />
+        )}
+      </ChangingProgressProvider>
+                  {/* <ProgressBar
                     animated={!file.error}
                     variant={file.error ? "danger" : "primary"}
-                    now={file.error ? 100 : file.progress * 10}
+                    now={file.error ? 100 : file.progress * 100}
                     label={
                       file.error
                         ? "Error"
-                        : `${Math.round(file.progress * 10)}%`
+                        : `${Math.round(file.progress * 100)}%`
                     }
-                  />
+                  /> */}
                 </Toast.Body>
               </Toast>
             ))}

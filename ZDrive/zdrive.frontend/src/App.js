@@ -18,7 +18,10 @@ const App = () => {
     }
   }, []);
 
-  return <BrowserRouter>
+  return (
+  
+    <div className='app'>
+  <BrowserRouter>
     <Nav_bar/>
     <Switch>
       <Route exact path="/" render={() => (isLoggedIn ? <Home /> : <SignInPage />)} />
@@ -28,6 +31,8 @@ const App = () => {
       <Route component={() => <h2>Page not found!</h2>} />
     </Switch>
   </BrowserRouter>
-};
+  </div>
+
+)};
 
 export default App;

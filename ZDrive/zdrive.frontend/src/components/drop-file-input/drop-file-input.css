@@ -1,6 +1,6 @@
 .drop-file-input {
     position: relative;
-    margin: auto;
+    margin:auto;
     width: 400px;
     height: 200px;
     border: 2px dashed var(--border-color);
@@ -39,7 +39,7 @@
 }
 
 .drop-file-preview {
-    margin-top: 30px;
+    margin-top: 1px;
 }
 
 .drop-file-preview p {
@@ -47,7 +47,7 @@
 }
 
 .drop-file-preview__title {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .drop-file-preview__item {
@@ -55,7 +55,7 @@
     display: flex;
     margin-bottom: 10px;
     background-color: var(--input-bg);
-    padding: 15px;
+    
     border-radius: 20px;
 }
 

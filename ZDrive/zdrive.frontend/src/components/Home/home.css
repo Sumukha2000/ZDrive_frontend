@@ -3,9 +3,13 @@
 }
 
 .box {
-    margin-top:10px;
+    position: absolute;
+    width: 600px;
+    height: 290px;
+    margin-top: 10%;
+    margin-left: 35%;
     background-color: var(--box-bg);
-    padding: 30px;
+    padding: 40px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
 }
